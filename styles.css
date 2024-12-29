@@ -1,0 +1,267 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #333; /* Ensure it stands out */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+header nav ul li a:hover {
+  color: #f0a500;
+}
+
+section {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section Styling */
+#about {
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+  max-width: 1200px;
+  background: #ededed;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.resume-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.resume-link:hover {
+  background-color: #f0a500;
+}
+
+/* Skills Section Styling */
+#skills {
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+  text-align: center;
+  max-width: 1200px;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.skill {
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.skill h3 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.skill p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar-container {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  width: 100%;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+.html-bar {
+  background-color: #e44d26; /* HTML color */
+}
+
+.css-bar {
+  background-color: #2965f1; /* CSS color */
+}
+
+.js-bar {
+  background-color: #f7df1e; /* JavaScript color */
+  color: black; /* Dark text for contrast */
+}
+
+/* Footer Section Styling */
+#footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  margin: 0 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00aced; /* Change color on hover */
+}
+
+.social-links a:nth-child(3):hover {
+  color: #bc2a8d; /* Instagram hover color */
+}
+
+.social-links a:nth-child(1):hover {
+  color: #0077b5; /* LinkedIn hover color */
+}
+
+/* Styling for Projects Section */
+#projects {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.container {
+  text-align: justify-all;
+  max-width: 1200px; /* Adjust to your preferred width */
+  margin: 0 auto; /* Centers the container */
+  padding: 0 15px; /* Optional: adds padding on the sides */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.container h2{
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+.progress-bar {
+  animation: growBar 2s ease-in-out;
+}
+
+@keyframes growBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; /* Matches the defined width */
+  }
+}
+
+
